@@ -1,0 +1,153 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-image: url(pl.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo{
+  padding: 1rem;
+  color: whitesmoke;
+}
+.navbar{
+  display: flex;
+  background-color: black;
+}
+.navbar-links {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.navbar-links ul{
+  margin:0;
+  padding:0;
+  display: flex;
+}
+.navbar-links li{
+  list-style: none;
+}
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+.effect{
+  transition: 0.4s;
+  font-size:18px;
+ }
+.effect:hover{
+   background: #DB7093;
+ }
+.contact-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info {
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-left:50px;
+  font-size: 25px;
+}
+.contact-form{
+  max-width: 700px;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.im1{
+  height: 60px;
+  display: flex;
+}
+.im2{
+  height: 60px;
+  display: flex;
+}
+.im3{
+  height: 60px;
+  display: flex;
+}
+.ims{
+  display:flex;
+  text-align:center;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+.contact-form .text-box{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+.contact-form .text-box:first-child{
+  margin-right: 15px;
+}
+.contact-form textarea{
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+.contact-form .send-btn{
+  float: right;
+  background: #0C4160;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  transition-property: background;
+}
+.contact-form .send-btn:hover{
+  background:linear-gradient(rgba(0,0,0,0.7), #0C4160);
+}
+@media screen and (max-width: 950px){
+  .contact-section{
+    flex-direction: column;
+}
+  .contact-info, .contact-form{
+    margin: 30px 50px;
+}
+  .contact-form h2{
+    font-size: 30px;
+}
+  .contact-form .text-box{
+    width: 100%;
+}
